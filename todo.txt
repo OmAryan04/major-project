@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/src.html -->
+<html lang="zxx" class="no-js" style="display: block;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		
+		<!-- Site Title -->
+		<title>Students' Research Convention</title>
+
+		<link href="./todo_files/css" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="./todo_files/linearicons.css">
+			<link rel="stylesheet" href="./todo_files/font-awesome.min.css">
+			<link rel="stylesheet" href="./todo_files/bootstrap.css">
+			<link rel="stylesheet" href="./todo_files/magnific-popup.css">
+			<link rel="stylesheet" href="./todo_files/nice-select.css">					
+			<link rel="stylesheet" href="./todo_files/animate.min.css">
+			<link rel="stylesheet" href="./todo_files/owl.carousel.css">
+			<link rel="stylesheet" href="./todo_files/main.css">
+		<script type="text/javascript" charset="UTF-8" src="./todo_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./todo_files/util.js"></script></head>
+		<body style="display: block;"><button type="button" id="mobile-nav-toggle"><i class="lnr lnr-menu"></i></button>
+
+			  <header id="header" class="">
+			  	
+			  	<hr>
+			    <div class="container">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				        <a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/index.html"><img src="./todo_files/logo.png" alt="" title=""></a>
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+				          <li class="menu-active"><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/src.html">Home</a></li>
+				          
+				          <li class="menu-has-children"><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/src.html" class="sf-with-ul">Events</a>
+                            <ul style="display: none;">
+                              <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/conference.html">Conferences</a></li>
+                              <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/WIRe.html">WIRe</a></li>
+                              <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/BeER.html">BeER</a></li>
+                            </ul>
+                          </li>   
+						  <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/registration.html">Register</a></li>
+						  <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/schedule.html">Schedule</a></li>
+						  <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/contact.html">Contact</a></li>
+				          		          
+				        </ul>
+				      </nav><!-- #nav-menu-container -->		    		
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
+
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>	
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center" style="height: 1008px;">
+						<div class="banner-content col-lg-8">
+							<h6 class="text-white">30-31 March 2019</h6>
+							<h1 class="text-white">
+								Students' Research Convention				
+							</h1>
+							<p class="pt-20 text-white">
+								IIT Kanpur being one of the premier institutes of the country is at the frontier of scientific progress in the diverse fields of research. As a student body aimed at promoting student-based research at IIT Kanpur, ARC has organised a Students' Research Convention (SRC).
+								
+							</p>
+							<p class=" pb-20 text-white">
+								SRC is a multi-conference research convention, a platform to present and share research experiences and provide an opportunity to interact with leading researchers across the globe.
+							</p>
+							<!--a href="#" class="primary-btn text-uppercase">Get Started</a>-->
+						</div>											
+					</div>
+				</div>					
+			</section>
+			<!-- End banner Area -->	
+
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>About Us</h6>
+								<p>
+									The <a href="https://arciitk.in/" target="_blank">Academics and Research Cell</a> of the Indian Institute of Technology, Kanpur is a cell directly placed under the Student's Gymkhana that aims to foster all needs related to academics and research for the campus dwellers.
+								</p>
+								
+							</div>
+						</div>
+										
+											
+					</div>
+				</div>
+			</footer>	
+			<!-- End footer Area -->		
+
+			<script src="./todo_files/jquery-2.2.4.min.js"></script>
+			<script src="./todo_files/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="./todo_files/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="./todo_files/js"></script>
+  			<script src="./todo_files/easing.min.js"></script>			
+			<script src="./todo_files/hoverIntent.js"></script>
+			<script src="./todo_files/superfish.min.js"></script>	
+			<script src="./todo_files/jquery.ajaxchimp.min.js"></script>
+			<script src="./todo_files/jquery.magnific-popup.min.js"></script>	
+			<script src="./todo_files/owl.carousel.min.js"></script>	
+			<script src="./todo_files/imagesloaded.pkgd.min.js"></script>
+			<script src="./todo_files/justified.min.js"></script>					
+			<script src="./todo_files/jquery.sticky.js"></script>
+			<script src="./todo_files/jquery.nice-select.min.js"></script>			
+			<script src="./todo_files/parallax.min.js"></script>		
+			<script src="./todo_files/mail-script.js"></script>	
+			<script src="./todo_files/main.js"></script>	
+		
+	
+
+
+
+<nav id="mobile-nav">
+				        <ul class="" style="touch-action: pan-y;" id="">
+				          <li class="menu-active"><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/src.html">Home</a></li>
+				          
+				          <li class="menu-has-children"><i class="lnr lnr-chevron-down"></i><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/src.html" class="sf-with-ul">Events</a>
+                            <ul style="display: none;">
+                              <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/conference.html">Conferences</a></li>
+                              <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/WIRe.html">WIRe</a></li>
+                              <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/BeER.html">BeER</a></li>
+                            </ul>
+                          </li>   
+						  <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/registration.html">Register</a></li>
+						  <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/schedule.html">Schedule</a></li>
+						  <li><a href="file:///home/nilay/Code/git/arciitk/ditttu.github.io/srchome/contact.html">Contact</a></li>
+				          		          
+				        </ul>
+				      </nav><div id="mobile-body-overly"></div></body></html>
