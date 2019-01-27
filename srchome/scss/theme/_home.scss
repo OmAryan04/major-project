@@ -1,4 +1,3 @@
-
 .section-gap {
 	padding: 120px 0;
 }
@@ -22,14 +21,14 @@
 .primary-btn {
 	background-color:$primary-color;
 	line-height: 42px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 30px;
+	padding-right: 60px;
+	border-radius: 25px;
 	border:none;
 	color: $white;
 	display: inline-block;
 	font-weight: 500;
 	position: relative;
-	border:1px solid transparent;
 	@include transition();
 	cursor: pointer;
 	text-transform: uppercase;
@@ -46,9 +45,11 @@
 		@include transition();
 	}
 	&:hover {
-		color: $primary-color;
-		background-color:transparent;
-		border-color:$primary-color;
+		color: $white;
+		span {
+			color: $white;
+			right: 20px;
+		}
 	}
 	&.white {
 		border: 1px solid $white;
@@ -82,14 +83,14 @@
 	background:url(../img/header-bg.jpg) center;
 	background-size:cover;
 	.overlay-bg{
-		background-color:rgba(#000,.7); 
+		background:rgba(#04091e,.85);
 	}
 }
 .banner-content {
-	margin-top:-90px;
 	text-align:center;
+	z-index:2;
 	h1{
-		font-size: 48px;
+		font-size: 72px;
 		font-weight: 700;
 		line-height: 1em;
 		margin-top:20px;
@@ -114,132 +115,227 @@
 		}
 	}
 	h6{
-		font-size:14px;
-		font-weight:400;
 		text-transform:uppercase;
-		letter-spacing:2px;
+		color:$primary-color;
+		letter-spacing:3;
+		font-weight:400;
 	}
 	@media(max-width:1280px){
 		br{
 			display:none;
 		}
 	}
-	@media(max-width:763px){
-		p{
-			color:$black;	
-		}
-	}
-}
-
-	
-
-//--------- End Banner Area -------------//
-
-
-//--------- Start Banner Area -------------//
-
-
-.single-service {
-	padding:30px;
-	text-align:center;
-  	background-color:$offwhite;
-	.lnr{
-		font-size:36px;
-		color:$black;
-		color:$primary-color;
-	}
 	h4{
-		margin-bottom:20px;
-		margin-top:25px;
+		color:$white;
+		margin-bottom:6px;
+		font-weight:300;
+	}
+	.lnr{
 		color:$primary-color;
+		margin-right:10px;
 	}
-
-	.image {
-	  display: block;
-	  width: 100%;
-	  height: auto;
-	}
-
-	.overlay {
-	  position: absolute;
-	  top: 0;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  height: 100%;
-	  width: 100%;
-	  opacity: 0;
-	  transition: .5s ease;
-	  background-color: $offwhite;
-	}
-
-	&:hover .overlay {
-	  opacity: 1;
-	  cursor:pointer;
-	}
-
-	.text {
-		p{
-		 	color:$text-color;
-		}
-	  padding:30px;
-	  color: white;
-	  position: absolute;
-	  text-align: center;
-	}
-
-	@media(max-width:960px){
-		margin-bottom:30px;
-		.overlay{
-			height:88%;	
-		}
-	}
-
 }
+
+
+.primary-btn{
+	background:$white;
+	border:1px solid transparent;
+	color:$black;
+	padding-left: 40px;
+	padding-right: 40px;	
+	border-radius:50px;
+	&:hover{
+		border:1px solid $white;
+		background:transparent;
+		color:$white;
+	}
+}
+
+.start-in{
+	display:inline-flex;
+	background-color:$primary-color;
+	color:$white;
+	padding:5px 30px;
+	margin-right:20px;
+	margin-bottom:20px;
+	font-size:14px;
+	text-transform:uppercase;
+}
+
+#timer{
+	padding:30px 0;
+	font-size:24px;
+	font-weight:600;
+	span{
+		font-size: 14px;
+		font-weight:200;
+		margin-right:30px;
+		@media(max-width:736px){
+			font-size:12px;
+		}
+
+	}
+} 
 
 //--------- End Banner Area -------------//
 
 
-//--------- Start quote Area -------------//
 
-.quote-left{
-	h1{
-		font-size:30px;
-		text-align:right;
-		font-weight:100;
-		span{
-			font-weight:600;
+//--------- Start video Area -------------//
+
+.home-video-area{
+	background-color:$offwhite;	
+}
+
+.video-area {
+
+}
+//--------- End video Area -------------//
+
+
+//--------- Start home-video  Area -------------//
+
+.video-area{
+	background-color:$offwhite;
+}
+
+.home-video-area{
+	.about-right{
+		padding-right:10%;
+		p{
+			span{
+				font-weight:500;
+				color:$black;
+			}
+		}
+		.top-title{
+			color:$primary-color;
+			letter-spacing:2px;
+			font-size:12px;
+			font-weight:500;
+			text-transform:uppercase;
+			margin-bottom:20px;
+		}
+		h1{
+			margin-bottom:20px;
+		}
+		@media(max-width:1366px){
+			flex: 0 0 50%;
+			max-width: 50%;
+			padding-right: 15px;
+			padding-left: 15px;
+			h1{
+				font-size:24px;
+			}
 		}
 		@media(max-width:1024px){
-			br{
-				display:none;				
+			h1,p{
+				margin-bottom:8px;
+			}
+		}		
+		@media(max-width:990px){
+			flex: 0 0 100%;
+			max-width: 100%;
+			padding-top: 15px;
+			padding-bottom: 15px;		
+		}
+
+	}
+}
+
+//--------- End home-video  Area -------------//
+
+
+//--------- Start home-aboutus  Area -------------//
+
+.home-aboutus-area{
+	background-color:$black;
+	.top-title{
+		color:$primary-color;
+		letter-spacing:2px;
+		font-size:12px;
+		text-transform:uppercase;
+		margin-bottom:20px;
+	}
+
+	.about-right{
+		h1{
+			margin-bottom:15px;
+		}
+		p{
+			span{
+				color:$white;
+				font-weight:500;
+			}
+		}
+		padding-right:8%;
+		@media(max-width:1366px){
+			padding:15px;
+			h1{
+				font-size:24px;
+			}
+			p span{
+				font-size:10px;
 			}
 		}
 	}
+
+
 }
 
 
-@media(max-width: 960px){
-	.quote-left,.quote-right{
-		margin-bottom:30px;
-		text-align:center;
+//--------- End home-aboutus  Area -------------//
+
+//--------- Start video-sec-area  Area -------------//
+
+.video-sec-area{
+
+	.video-left{
+		.primary-btn{
+			background-color:$black;
+			color:$white;
+			border:1px solid transparent;
+			@include transition();
+			&:hover{
+				border:1px solid $black;
+				background-color:transparent;
+				color:$black;
+			}
+		}
+		h6{
+			text-transform:uppercase;
+			letter-spacing:2px;
+			color:$primary-color;
+			font-size:12px;
+			font-weight:300;
+		}
 		h1{
-			text-align:center
+			padding-bottom:20px;
+		}
+		p{
+			span{
+				color:#000;		
+				font-weight:400;
+			}
+		}
+		@media(max-width:960px){
+			margin-bottom:80px;
 		}
 	}
-}
 
-
-//--------- End quote Area -------------//
-
-
-//--------- Start exibition Area -------------//
-
-.exibition-area{
-	background-color:$offwhite;
+	.video-right{
+		background-size:cover;
+		height:350px;
+		.overlay-bg{
+			background-color:rgba(#000, .78);
+		}
+		.play-btn{
+			z-index: 2;
+		}
+	}
 
 	.owl-dots {
-	    text-align: center;
+		text-align:center;
 	    bottom: 5px;
 	    margin-top:20px;
 	    width: 100%;
@@ -256,194 +352,285 @@
 	    background: rgba(127,127,127, 0.5);
 	    margin-left: 5px;
 	    margin-right: 5px;
-	    @include transition();
+	    @inlcude transition();
 	}
 
 	.owl-dot.active {
 		@include transition;
+	    padding: 0px 25px 0px 0px;
 	    background:$primary-color;
 	}
 
 }
 
-.single-exibition{
-	.tags {
-		padding:20px 0;
-		li{
-			display:inline-block;
-			background-color:$white;
-			padding:5px 15px;
-			a{
-				color:$black;
-				font-weight:600;
-			}
-			
-			border:1px solid #eee;
+//--------- End video-sec-area  Area -------------//
+
+
+//--------- Start speaker-area  Area -------------//
+
+
+.spekers-area{
+	.owl-dots {
+		text-align:center;
+	    bottom: 5px;
+	    margin-top:20px;
+	    width: 100%;
+	    -webkit-backface-visibility: hidden;
+	    -moz-backface-visibility: hidden;
+	    -ms-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	}
+
+	.owl-dot {
+	    height: 10px;
+	    width: 10px;
+	    display: inline-block;
+	    background: rgba(127,127,127, 0.5);
+	    margin-left: 5px;
+	    margin-right: 5px;
+	    @inlcude transition();
+	}
+
+	.owl-dot.active {
+		@include transition;
+	    padding: 0px 25px 0px 0px;
+	    background:$primary-color;
+	}	
+}
+
+.single-speaker{
+	background-color:#04091e;
+	h6{
+		font-size:12px;
+		font-weight: 300;
+		letter-spacing:3px;
+		color:$primary-color;
+		margin-bottom:0;
+	}
+	h1{
+		margin:20px 0;
+	}
+	.lnr{
+		color:$white;
+		margin-right:10px;
+		font-weight:700;
+	}
+	ul {
+		a{
+			margin-right:10px;
+			color:#eee;
 			@include transition();
 			&:hover{
-				a{
-					color:$white;
-				}
-				background-color:$primary-color;
-							
+				color:$primary-color;
 			}
 		}
-	}
-	h4{
-		padding-bottom:20px;
-	}
-
-	.date{
-		color:$black;
-		font-weight:300;
-	}
-	@media(max-width:414px){
-		padding:15px;
 	}
 }
-
-
-//--------- End exibition Area -------------//
-
-
-//--------- Start upcoming-event Area -------------//
-
-.upcoming-event-area{
-	.event-left{
-		.single-events{
-			h4{
-				margin-top:40px;
-			}
-			h6{
-				font-weight:300;
-				color:#777;
-				padding-top:10px;
-				padding-bottom:12px;
-				span{
-					color:$black;
-				}
-			}
-			margin-bottom:50px;
+.speaker-info{
+	padding:40px;
+	@media(max-width:1366px){
+		h1{
+			font-size:30px;
 		}
 	}
-
-	.event-right{
-		.single-events{
-			img{
-				margin-top:40px;
-			}
-			h6{
-				font-weight:300;
-				color:#777;
-				padding-top:10px;
-				padding-bottom:12px;
-				span{
-					color:$black;
-				}
-			}
-			margin-bottom:50px;
+	@media(max-width:1280px){
+		padding:10px 40px;
+		h1{
+			font-size:25px;
 		}
+	}
+	@media(max-width:767px){
+		padding:40px;
 	}	
-
 }
 
-//--------- End upcoming-event Area -------------//
 
 
-//--------- start blog  area -------------//
+//--------- End speaker-area  Area -------------//
 
-.blog-area{
-	background-color:$offwhite;
+
+//--------- Start schedule Area -------------//
+
+.table-wrap{
+	@media(max-width: 768px){
+		overflow-x: scroll;
+	}
 }
 
-.single-blog{
-
-	.thumb{
-		overflow: hidden;
-		img{
-			width:100%;
-			@include transition();
-		}
+.table{
+	text-align:center;
+	th{
+		font-weight: 300;
 	}
-	&:hover{
-		img{
-			transform:scale(1.1);
-		}
-		h4{
-			color:$primary-color;
-		}
+	.name{
+		padding-top:12px;
 	}
-	h4{
-		margin-bottom:12px;
+	tr{
 		@include transition();
-	}
-	a{
-		color:$black;
-	}
-	.date{
-		background-color: #000;
-		color: #fff;
-		font-weight:100;
-		padding: 2px 15px;
-		width: 115px;
-		text-align: center;
-		margin-top: 20px;
-	}
-
-	@media(max-width:800px){
-		margin-bottom:30px;
+		&:hover{
+			background-color:$primary-color;
+			color:$white;			
+		}
 	}
 }
 
-.meta-bottom{
-
+.thead-light .head{
+	text-transform:uppercase;
+	font-weight:700;
+	color:$black !important;
 }
 
-//--------- end blog area  -------------//
+
+//--------- end schedule Area -------------//
 
 
-//--------- Start gallery  Area -------------//
+//--------- Start price  Area -------------//
 
-.gallery-area{
-	background-color:#04091e;
+.price-area{
+	background:$offwhite;
+	.single-price{
+		@include transition();		
+		text-align:center;
+		background-color:#fff;
+		border-radius:5px;
+		padding:40px 20px;
+		.package-no{
+			@include transition();	
+			font-weight: 300;
+			margin-left: auto;
+			margin-right: auto;
+			width: 140px;
+			height: 140px;
+			background-color:#e8f2d7;
+			border-radius:100px;
+			align-items: center;
+			display: grid;
+			border:30px solid #f3f8ea;			
+		}
+		.top-part h4{
+			margin-top:20px;
+		}
+		.package-list{
+			padding:30px 0;
+			ul li{
+				padding:10px 0;
+				border-top:1px solid #eee;
+			}
+			ul li:last-child{
+				border-bottom: 1px solid #eee;
+			}
+		}
+		.bottom-part{
+				@include transition();
 
-	#grid-container {
-	  width: 100%;
-	  margin: auto;
-	  overflow: hidden;
-	}
+			.price-btn{
+				@include transition();
+				background-color:$white;
+				color:$black;
+				margin-top:40px;
+				padding:10px 50px;
+				border-radius:5px;
+				font-weight:600;
+				display:inline-block;				
+			}
+		}
 
-	.grid-item {
-	  opacity: 0;
-	  float: left;
-	  box-sizing: border-box;
-	}
+		&:hover{
+			transform:scale(1.1);
+			z-index:2;
+			background-color:$primary-color;
+			color:$white;
+			cursor:pointer;
+			h1,h4{
+				color:$white;
+			}
+			.package-no{
+				border-color: #96c042;
+				background-color:#accd6a;
+			}			
+		}
 
-	.grid-item img {
-	  width: 100%;
-	  height: 100%;
-	}
-
-	.grid-item.loaded {
-	  opacity: 1;
-	  transition: opacity .5s;
+		@media(max-width:960px){
+			margin-bottom:30px;
+		}
+		@media(max-width:736px){
+			margin:10px;
+		}
 	}
 }
 
-//--------- End gallery  Area -------------//
+
+//--------- end price  Area -------------//
+
+
+//--------- start brand Area -------------//
+
+
+.single-img{
+	img{
+		@include filter(grayscale, 100%);
+
+		@include transition();
+		&:hover{
+			@include filter(grayscale, 0%);
+		}
+		@media(max-width:800px){
+			margin-bottom:40px;
+		}
+	}
+}
+
+
+
+//--------- end brand Area -------------//
+
+
+//--------- start callaction Area -------------//
+
+.callaction-area{
+	background:url(../img/callaction-bg.jpg) center;
+	background-size:cover;
+	text-align: center;
+	color:$white;
+	p{
+		padding:20px 0;
+	}
+	.overlay-bg{
+		background-color:rgba(#04091e,.75);
+	}
+}
+
+.callaction-btn{
+	background-color:$primary-color;
+	color:$white;
+	border:1px solid transparent;
+	padding:10px 40px;
+	font-size:14px;
+	font-weight:300;	
+	@include transition();
+	&:hover{
+		background-color:transparent;
+		border-color:$primary-color;
+		color:$primary-color;
+	}
+}
+
+//--------- end callaction Area -------------//
+
 
 //--------- start footer Area -------------//
 
 	.footer-area{
 		padding-top:100px;
-		background-color:$white;
-
-		h6{
-			margin-bottom:25px;
-			font-size:18px;
-			font-weight:600;
-		}
+		background-color:#04091e;
 	}
+	h6{
+		color:#fff;
+		margin-bottom:25px;
+		font-size:18px;
+		font-weight:600;
+	}
+	
 	.copy-right-text{
 		i,a{
 			color:$primary-color;
@@ -481,7 +668,7 @@
 			border: none;
 			width:80%!important;
 			font-weight: 300;
-			background: #f9f9ff;
+			background: #fff;
 			color:#eee;
 			padding-left:20px;
 			border-radius: 0;
@@ -520,7 +707,7 @@
 			border-radius: 0;
 			border-top-left-radius: 0px;
 			border-bottom-left-radius: 0px;
-			padding: 9px 12px;
+			padding: 8px 12px;
 			border:0;
 		}
 
@@ -578,10 +765,11 @@
 
 //--------- end footer Area -------------//
 
+
 //----------- Start Generic Page -------------//
 
 .whole-wrap{
-	background-color:#f3f3f3;
+	background-color:$white;
 }
 
 
@@ -624,7 +812,7 @@
 
 
 .about-generic-area {
-	background: $offwhite;
+	background: $white;
 	.border-top-generic {
 
 	}
