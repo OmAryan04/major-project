@@ -739,6 +739,24 @@ th {
     bottom: 0
 }
 
+
+/* Contact Area Starts */
+
+.contact-area {
+    background: url(../img/contact-txt.jpg);
+}
+
+.feature {
+    text-align: center;
+}
+
+.contact-area img {
+    border-radius: 40px;
+}
+
+
+/* Contact Area Ends */
+
 .container.fullwidth {
     width: 100%
 }
