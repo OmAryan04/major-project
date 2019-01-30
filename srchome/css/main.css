@@ -2495,6 +2495,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 500
 }
 
+.feature-padding {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
 @media (max-width: 1366px) {
     .home-aboutus-area .about-right {
         padding: 15px
