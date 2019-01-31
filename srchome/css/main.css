@@ -2296,7 +2296,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-    background: url(../img/pkklib.jpg) center;
+    background: url(../img/pkklib.jpg) center fixed;
     background-size: cover
 }
 
