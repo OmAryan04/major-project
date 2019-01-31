@@ -2903,6 +2903,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-color: #04091e
 }
 
+.footer-area a {
+    color: #ffffff;
+}
+
 h6 {
     color: #fff;
     margin-bottom: 25px;
