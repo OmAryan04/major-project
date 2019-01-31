@@ -2542,7 +2542,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     letter-spacing: 2px;
     color: var(--blue);
     font-size: 15px;
-    font-weight: 600
+    font-weight: 600;
 }
 
 .video-sec-area .video-left h1 {
@@ -2621,7 +2621,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background: rgba(127, 127, 127, 0.5);
     margin-left: 5px;
     margin-right: 5px;
-    @inlcude transition()
+    @include transition()
 }
 
 .spekers-area .owl-dot.active {
@@ -2638,11 +2638,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-speaker h6 {
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
     color: var(--blue);
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 .single-speaker h1 {
