@@ -2879,7 +2879,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-color: var(--blue);
     color: #fff;
     border: 1px solid transparent;
-    padding: 10px 40px;
     font-size: 14px;
     font-weight: 300;
     -webkit-transition: all 0.3s ease 0s;
