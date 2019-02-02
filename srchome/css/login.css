@@ -50,6 +50,10 @@ input:focus {
     box-shadow: 0 0 0 0 !important;
 }
 
+.card-footer li {
+    text-align: center;
+}
+
 .remember {
     color: rgb(59, 59, 59);
 }
