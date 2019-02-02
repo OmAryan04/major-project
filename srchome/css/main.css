@@ -1,5 +1,6 @@
 :root {
     --blue: #028ada;
+    --darkblue: #0066a1;
     --green: #8ab92d;
 }
 
@@ -2223,6 +2224,20 @@ body.mobile-nav-active #mobile-nav-toggle {
     .section-title p br {
         display: none
     }
+}
+
+.login-btn {
+    background-color: var(--blue);
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    position: relative;
+    padding: 6px 20px !important;
+}
+
+.login-btn:hover {
+    background-color: var(--darkblue);
 }
 
 .primary-btn {
