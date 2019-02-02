@@ -2713,6 +2713,60 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
+
+/* Timeline starts */
+
+.timeline-area {
+    padding-top: 50px;
+    color: #ddd;
+}
+
+.timeline-area h3 {
+    color: #fff;
+}
+
+.timeline-feature {
+    /* margin: 0px 2px; */
+    padding: 10px 30px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    background: var(--blue);
+}
+
+.timeline-feature:hover {
+    background: var(--darkblue);
+}
+
+.no-top-padding {
+    padding-top: 0px;
+}
+
+
+/* .timeline-feature-left {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+} */
+
+.timeline-feature-center {
+    /* border-left: 1px #bbb ridge;
+    border-right: 1px #bbb solid; */
+    background-color: #0290e2;
+}
+
+
+/* .timeline-feature-right {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+} */
+
+.timeline-header {
+    padding: 20px;
+    height: 75%;
+}
+
+
+/* Timeline ends */
+
 @media (max-width: 768px) {
     .table-wrap {
         overflow-x: scroll
