@@ -8,7 +8,7 @@ body {
 }
 
 .overlay-bg {
-    background: rgba(4, 9, 30, 0.75);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .container {
@@ -30,12 +30,6 @@ body {
     line-height: 1.2em;
     font-size: 30px;
     font-weight: 600;
-}
-
-.social_icon {
-    position: absolute;
-    right: 20px;
-    top: -45px;
 }
 
 .input-group-prepend span {
