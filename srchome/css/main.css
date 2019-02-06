@@ -2240,6 +2240,31 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-color: var(--darkblue);
 }
 
+.abstract-btn-area {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.abstract-btn {
+    /* margin: 50px; */
+    background-color: var(--blue);
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 14px 20px;
+}
+
+.abstract-btn:hover {
+    background-color: var(--darkblue);
+    color: white;
+}
+
 .primary-btn {
     background-color: var(--blue);
     line-height: 42px;
