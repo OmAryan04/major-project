@@ -2783,10 +2783,16 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-bottom-left-radius: 20px;
 } */
 
+.timeline-feature-left {
+    background-color: #00a2ff;
+}
+
 .timeline-feature-center {
-    /* border-left: 1px #bbb ridge;
-    border-right: 1px #bbb solid; */
     background-color: #0093e8;
+}
+
+.timeline-feature-right {
+    background-color: #0084d1;
 }
 
 
