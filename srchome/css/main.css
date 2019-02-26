@@ -2560,6 +2560,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
+.conf-list-box {
+    padding: 40px 0px;
+    margin-bottom: 20px;
+    background: #f0efef;
+    border-radius: 50px;
+}
+
+.whats-in-it {
+    padding: 0px 40px;
+}
+
 .video-sec-area .video-left .primary-btn {
     background-color: #222;
     color: #fff;
@@ -2759,7 +2770,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .timeline-feature:hover {
-    background: var(--darkblue);
+    background: #007bc2;
 }
 
 .no-top-padding {
@@ -2775,7 +2786,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .timeline-feature-center {
     /* border-left: 1px #bbb ridge;
     border-right: 1px #bbb solid; */
-    background-color: #0290e2;
+    background-color: #0093e8;
 }
 
 
