@@ -2354,6 +2354,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     z-index: 2
 }
 
+.banner-content img {
+    width: 320px;
+    height: 90px;
+    margin-bottom: 40px;
+}
+
 .banner-content h1 {
     font-size: 72px;
     font-weight: 700;
@@ -2561,7 +2567,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .conf-list-box {
-    padding: 40px 0px;
+    padding: 48px 0px;
     margin-bottom: 20px;
     background: #f0efef;
     border-radius: 50px;
@@ -2569,6 +2575,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .whats-in-it {
     padding: 0px 40px;
+}
+
+.whats-in-it hr {
+    margin: 3px;
 }
 
 .video-sec-area .video-left .primary-btn {
@@ -2602,8 +2612,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 30px;
 }
 
-.video-sec-area .video-left p {
-    text-align: center !important;
+.video-sec-area p {
+    text-align: justify !important;
+    -moz-text-align-last: center;
+    text-align-last: center;
 }
 
 @media (max-width: 960px) {
