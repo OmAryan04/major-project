@@ -2355,9 +2355,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-content img {
-    width: 320px;
-    height: 90px;
+    width: 220px;
+    height: 60px;
     margin-bottom: 40px;
+    padding-right: 30px;
 }
 
 .banner-content h1 {

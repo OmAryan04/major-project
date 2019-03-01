@@ -1,27 +1,49 @@
+<?php
+/**
+ * Copyright (C) 2013 peredur.net
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+include_once 'includes/db_connect.php';
+include_once 'includes/functions.php';
+
+sec_session_start();
+?>
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Dashboard | SRC '19, IIT Kanpur</title>
-    <link rel="shortcut icon" href="img/fav.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/dash.css">
-</head>
-
-<body>
-    <div class="overlay overlay-bg">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dashboard | SRC '19</title>
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="shortcut icon" href="img/fav.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/dash.css">
+    </head>
+    <body>
+        <?php if (login_check($mysqli) == true) : ?>
+        <div class="overlay overlay-bg">
         <div class="container">
             <div class="d-flex justify-content-center h-100">
                 <div class="card">
                     <div class="card-header">
-                        <h2>Dashboard</h2>
+                        <h2>Welcome <?php echo htmlentities($_SESSION['username']); ?>!</h2>
                     </div>
                     <div class="card-body">
 
@@ -39,7 +61,7 @@
                                     <h4>Abstract Status</h4>
                                 </div>
                                 <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis vitae nihil culpa magnam eaque sint, accusantium reprehenderit ad quisquam. Eveniet, neque! Est, aliquam ullam. Ullam porro numquam laborum corrupti.</p>
+                                    <p>Will be updated soon.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 status-section section-center">
@@ -47,7 +69,7 @@
                                     <h4>Registration Status</h4>
                                 </div>
                                 <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis vitae nihil culpa magnam eaque sint, accusantium reprehenderit ad quisquam. Eveniet, neque! Est, aliquam ullam. Ullam porro numquam laborum corrupti.</p>
+                                    <p>Will be updated soon.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 status-section">
@@ -55,7 +77,7 @@
                                     <h4>Payment Status</h4>
                                 </div>
                                 <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis vitae nihil culpa magnam eaque sint, accusantium reprehenderit ad quisquam. Eveniet, neque! Est, aliquam ullam. Ullam porro numquam laborum corrupti.</p>
+                                    <p>Will be updated soon.</p>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +117,7 @@
                         </div> -->
                         <div class="d-flex justify-content-center">
                             <ul>
-                                <li><a href="#">Log out</a></li>
+                                <li><a href="index.php">Log out</a></li>
                             </ul>
                         </div>
                     </div>
@@ -103,6 +125,10 @@
             </div>
         </div>
     </div>
-</body>
-
+        <?php else : ?>
+            <p>
+                <span class="error">You are not authorized to access this page.</span> Please <a href="index.php">login</a>.
+            </p>
+        <?php endif; ?>
+    </body>
 </html>
